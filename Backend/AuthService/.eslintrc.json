@@ -15,20 +15,9 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "indent": ["error", "tab"],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
-    "prettier/prettier": [
-      "error",
-      {
-        "tabWidth": 2,
-        "bracketSpacing": true,
-        "singleQuote": false,
-        "arrowParens": "always",
-        "semi": true,
-        "endOfLine": "lf"
-      }
-    ]
+    "prettier/prettier": ["error"]
   }
 }
