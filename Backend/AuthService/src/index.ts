@@ -21,11 +21,7 @@ const { initialize: passportInitialize, session: passportSession } =
   passportInit();
 
 //cors
-app.use(
-  cors({
-    origin: "*",
-  }),
-);
+app.use(cors());
 
 // session
 app.use(

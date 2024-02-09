@@ -57,7 +57,7 @@ export const googleAuthSuccess = (req: Request, res: Response) => {
   };
 
   const newAccessToken = generateAccessToken(tokenPayload);
-  const redirectURL = `${process.env.CLIENT_REDIRECT_URL}?accessToken=${newAccessToken}`;
+  const redirectURL = `${process.env.CLIENT_NATIVE_REDIRECT_URL}?accessToken=${newAccessToken}`;
 
   const userExist = User.findById(id, "id");
 
